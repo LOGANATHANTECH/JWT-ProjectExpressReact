@@ -23,7 +23,7 @@ function Profile() {
                 }
             } else {
                 // If 'user' item is missing, redirect to login
-                navigate('/login', { replace: true });
+                navigate('/', { replace: true });
             }
             setLoading(false);
         };
@@ -37,7 +37,7 @@ function Profile() {
         localStorage.removeItem('user'); 
         
         // Redirect the user to the login page
-        navigate('/login', { replace: true });
+        navigate('/', { replace: true });
     };
 
     if (loading) {

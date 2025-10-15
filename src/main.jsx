@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     // loader: () => { console.log("loader function is called") },
     // action: async () => { console.log("action function is called") },
     children: [{
-      path: "/login",
+      path: "/",
       element: <Login />
 
     },
