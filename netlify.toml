@@ -1,0 +1,14 @@
+[build]
+  # 1. Specify the build command for your Vite app
+  command = "npm run build"
+  
+  # 2. Specify the directory where Vite outputs the production files
+  publish = "dist"
+
+# 3. Define the SPA Redirect Rule
+# This rule tells Netlify to serve index.html for any path that doesn't
+# match a file, allowing client-side routing (React Router) to handle it.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
